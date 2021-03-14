@@ -22,11 +22,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 3rem 0rem;
     color: #ccc;
     font-size: 1.4rem;
-    line-height: 150%;
+    line-height: 150%;    
 
     & a{
        color: #4FD1C5;
        text-decoration: none;
+       border-bottom: 2px solid #4FD1C5;
     }
   }  
 

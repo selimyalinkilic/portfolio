@@ -1,41 +1,46 @@
-import React from "react";
-import styled from "styled-components";
-import aboutme from "../img/aboutme.svg";
+import React from 'react';
+import styled from 'styled-components';
+import skills from "../img/skills.svg";
 
-const AboutSection = () => {
+const SkillsSection = () => {
   return (
-    <About>
+    <Skills>
       <Description>
         <Hide>
-          <h2>About</h2>
+          <h2>Skills</h2>
         </Hide>
         <Hide>
           <p>
-            I am a front end developer working at&nbsp;
+            You can see my skills from&nbsp;
             <a
               href="https://www.shopier.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Shopier
+              github
             </a>
-            . Also love to improving myself about to new techs.
+            &nbsp;profile and my&nbsp;<a
+              href="https://www.shopier.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              resume
+            </a>&nbsp;.            
           </p>
         </Hide>
       </Description>
       <Image>
-        <img src={aboutme} alt="About Me" />
+        <img src={skills} alt="Skills" />
       </Image>
-    </About>
-  );
-};
+    </Skills>
+  )
+}
 
-const About = styled.div`
+const Skills = styled.div`
   min-height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: row-reverse;
+  justify-content: space-between;  
   padding: 5rem;
   color: white;
 `;
@@ -59,5 +64,4 @@ const Hide = styled.div`
   overflow: hidden;
 `
 
-
-export default AboutSection;
+export default SkillsSection

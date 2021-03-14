@@ -1,11 +1,11 @@
 import React from "react";
-import styled from "styled-components";
 import aboutme from "../img/aboutme.svg";
+import { Container, Description, Hide, Image } from './style';
 
 const AboutSection = () => {
   return (
-    <About>
-      <Description>
+    <Container reverse>
+      <Description pr5>
         <Hide>
           <h2>About</h2>
         </Hide>
@@ -26,38 +26,11 @@ const AboutSection = () => {
       <Image>
         <img src={aboutme} alt="About Me" />
       </Image>
-    </About>
+    </Container>
   );
 };
 
-const About = styled.div`
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  padding: 5rem;
-  color: white;
-`;
 
-const Description = styled.div`
-  flex: 1;
-  padding-left: 5rem;  
-`;
-
-const Image = styled.div`
-  flex: 1;
-  overflow: hidden;
-  img{
-    width: 100%;
-    height: 90%;
-    object-fit: cover;    
-  }
-`;
-
-const Hide = styled.div`
-  overflow: hidden;
-`
 
 
 export default AboutSection;

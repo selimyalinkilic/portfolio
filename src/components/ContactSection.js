@@ -15,7 +15,7 @@ const ContactSection = () => {
           <h2>Contact</h2>
         </Hide>
         <Hide>
-          <p>You can contact me at these platforms.</p>
+          <p>While we're good with smoke signals, there are simpler ways for us to get in touch.</p>
           <SocialMenu>
             <SocialMenuItem>
               <SocialMenuLink href="https://www.facebook.com/selimyalinkilic/" target="_blank" rel="noopener noreferrer">

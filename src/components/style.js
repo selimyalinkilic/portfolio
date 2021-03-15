@@ -43,13 +43,13 @@ export const Hide = styled.div`
 export const SocialMenu = styled.ul`
   display: flex;
   align-items: center;
+  list-style: none;
   margin-top: 1rem;
 `;
 
 export const SocialMenuItem = styled.li`
   display: flex;
   align-items: center;
-  list-style: none;  
   margin-right: 1.5rem;
   &::last-child{
     margin-right: 0;

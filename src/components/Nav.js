@@ -1,9 +1,11 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import styled from 'styled-components';
+import {navbarAnimation} from '../animation';
 
 const Nav = () => {
   return (
-    <Navbar>
+    <Navbar variants={navbarAnimation} initial="hidden" animate="show">
       <h1 id="logo"><a  href="#home" rel="noopener noreferrer">Selim Yalinkilic</a></h1>
       <ul>
         <li>
@@ -23,15 +25,13 @@ const Nav = () => {
   )
 }
 
-const Navbar = styled.nav`
+const Navbar = styled(motion.nav)`
   min-height: 10vh;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
-  position: sticky; 
-  top: 0;
   background-color: #141923;
   a{
     color: #fff;

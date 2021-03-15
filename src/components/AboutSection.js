@@ -1,10 +1,13 @@
 import React from "react";
 import aboutme from "../img/aboutme.svg";
 import { Container, Description, Hide, Image } from './style';
+import { scrollReveal } from "../animation";
+import {useScroll} from './useScroll';
 
 const AboutSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Container reverse>
+    <Container variants={scrollReveal} animate={controls} initial="hidden" reverse ref={element}>
       <Description pr5>
         <Hide>
           <h2>About</h2>

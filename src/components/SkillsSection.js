@@ -1,10 +1,13 @@
 import React from 'react';
 import skills from "../img/skills.svg";
 import { Container, Description, Hide, Image } from './style';
+import { scrollReveal } from '../animation';
+import {useScroll} from './useScroll';
  
 const SkillsSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Container>
+    <Container variants={scrollReveal} animate={controls} initial="hidden" ref={element}>
       <Description pl5>
         <Hide>
           <h2>Skills</h2>

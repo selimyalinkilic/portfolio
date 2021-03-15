@@ -6,10 +6,13 @@ import gmail from '../img/gmail.svg';
 import instagram from '../img/instagram.svg';
 import linkedin from '../img/linkedin.svg';
 import twitter from '../img/twitter.svg';
+import { scrollReveal } from '../animation';
+import {useScroll} from './useScroll';
 
 const ContactSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Container reverse>
+    <Container variants={scrollReveal} animate={controls} initial="hidden" reverse ref={element}>
       <Description pl5>
         <Hide>
           <h2>Contact</h2>

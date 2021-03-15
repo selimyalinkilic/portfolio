@@ -1,20 +1,22 @@
 import React from "react";
 import { Container, Description, Hide, Image } from './style';
 import portfolio from "../img/portfolio.svg";
+import {motion} from 'framer-motion';
+import {titleAnimation, fade, photoAnimation} from '../animation';
 
-const ShowCaseSection = () => {
+const ShowCaseSection = () => { 
   return (
     <Container>
-      <Description pl5>
+      <Description pl5>              
         <Hide>
-          <h2>Hi</h2>
+          <motion.h2 variants={titleAnimation} initial="hidden" animate="show">Hi</motion.h2>
         </Hide>
         <Hide>
-          <p>I am SELIM YALINKILIC. A frontend developer from Turkey.</p>
+          <motion.p variants={fade} initial="hidden" animate="show">I am SELIM YALINKILIC. A frontend developer from Turkey.</motion.p >
         </Hide>
       </Description>
       <Image>
-        <img src={portfolio} alt="Portfolio" />
+        <motion.img variants={photoAnimation} src={portfolio} alt="Portfolio" />
       </Image>
     </Container>
   );

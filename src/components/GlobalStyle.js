@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
   body{
     background-color: #1A202C;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 
   h2{
@@ -28,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
        color: #4FD1C5;
        text-decoration: none;
        border-bottom: 2px solid #4FD1C5;
+       font-weight: 600;
     }
   }  
 

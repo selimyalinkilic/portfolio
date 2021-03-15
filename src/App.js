@@ -1,4 +1,5 @@
 import AboutSection from "./components/AboutSection";
+import ContactSection from "./components/ContactSection";
 import GlobalStyle from './components/GlobalStyle';
 import ShowCaseSection from "./components/ShowCaseSection";
 import SkillsSection from "./components/SkillsSection";
@@ -9,6 +10,7 @@ function App() {
       <ShowCaseSection />
       <AboutSection />
       <SkillsSection />
+      <ContactSection />
     </div>
   );
 }

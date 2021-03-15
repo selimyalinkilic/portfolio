@@ -10,7 +10,7 @@ export const Container = styled.div`
   ${props =>
     props.reverse &&
     css`
-      flex-direction: row-reverse;
+      flex-direction: row-reverse;            
     `};
 `;
 
@@ -38,4 +38,30 @@ export const Image = styled.div`
 
 export const Hide = styled.div`
   overflow: hidden;
-`
+`;
+
+export const SocialMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+`;
+
+export const SocialMenuItem = styled.li`
+  display: flex;
+  align-items: center;
+  list-style: none;  
+  margin-right: 1.5rem;
+  &::last-child{
+    margin-right: 0;
+  }
+`;
+
+export const SocialMenuLink = styled.a`
+  color: transparent;
+  text-decoration: none;
+  display: block;
+  img{
+    width: 35px;
+    height: 35px;
+  }
+`;

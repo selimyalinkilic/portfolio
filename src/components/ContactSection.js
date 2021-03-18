@@ -12,7 +12,7 @@ import {useScroll} from './useScroll';
 const ContactSection = () => {
   const [element, controls] = useScroll();
   return (
-    <Container variants={scrollReveal} animate={controls} initial="hidden" reverse ref={element}>
+    <Container variants={scrollReveal} animate={controls} initial="hidden" reverse ref={element} id="contact">
       <Description pl5>
         <Hide>
           <h2>Contact</h2>

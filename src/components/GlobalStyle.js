@@ -7,9 +7,17 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html{
+    font-size: 80%;
+    @media (max-width: 1400px){
+      font-size: 75%;      
+    }    
+  }
+
   body{
     background-color: #1A202C;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
   }
 
   h2{

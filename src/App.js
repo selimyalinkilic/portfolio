@@ -6,19 +6,34 @@ import ShowCaseSection from "./components/ShowCaseSection";
 import SkillsSection from "./components/SkillsSection";
 import {motion} from 'framer-motion';
 import {contentAnimation} from './animation';
-function App() {
+import { useEffect } from "react";
+import styled from "styled-components";
+const App = () => {
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    }) 
+  });
   return (
     <div className="App">
-      <GlobalStyle />      
+      <GlobalStyle />   
       <Nav />      
-      <motion.div variants={contentAnimation} initial="hidden" animate="show">
+      <Section variants={contentAnimation} initial="hidden" animate="show" layout>
         <ShowCaseSection />
         <AboutSection />
         <SkillsSection />
         <ContactSection />
-      </motion.div>
+      </Section>
     </div>
   );
 }
+
+const Section = styled(motion.div)`
+  @media (max-width: 1300px){
+    margin-top: 120px;
+  }
+`
 
 export default App;

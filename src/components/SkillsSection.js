@@ -7,7 +7,7 @@ import {useScroll} from './useScroll';
 const SkillsSection = () => {
   const [element, controls] = useScroll();
   return (
-    <Container variants={scrollReveal} animate={controls} initial="hidden" ref={element}>
+    <Container variants={scrollReveal} animate={controls} initial="hidden" ref={element} id="skills">
       <Description pl5>
         <Hide>
           <h2>Skills</h2>
@@ -23,7 +23,7 @@ const SkillsSection = () => {
               github
             </a>
             &nbsp;profile and my&nbsp;<a
-              href="/resume.docx"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

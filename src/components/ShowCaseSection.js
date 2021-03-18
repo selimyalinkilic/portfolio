@@ -6,7 +6,7 @@ import {titleAnimation, fade, photoAnimation} from '../animation';
 
 const ShowCaseSection = () => { 
   return (
-    <Container>
+    <Container id="home">
       <Description pl5>              
         <Hide>
           <motion.h2 variants={titleAnimation} initial="hidden" animate="show">Hi</motion.h2>

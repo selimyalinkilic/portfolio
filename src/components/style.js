@@ -13,6 +13,12 @@ export const Container = styled(motion.div)`
     css`
       flex-direction: row-reverse;            
     `};
+  @media (max-width: 1300px){        
+    min-height: 75vh;
+    flex-direction: column!important;    
+    padding: 2rem;
+    text-align: center;
+  }  
 `;
 
 export const Description = styled.div`
@@ -25,6 +31,9 @@ export const Description = styled.div`
     css`
       padding-left: 5rem;
     `};
+  @media (max-width: 1300px){
+    padding: 0!important;
+  }  
 `;
 
 export const Image = styled.div`
@@ -34,6 +43,15 @@ export const Image = styled.div`
     width: 100%;
     height: 90%;
     object-fit: cover;    
+  }
+  @media (max-width: 1300px){
+    margin-top: 2rem;    
+  }
+  @media (min-width: 768px) and (max-width: 1300px){    
+    img{
+      width: 80%;
+      height: 80%;
+    }    
   }
 `;
 
@@ -46,6 +64,9 @@ export const SocialMenu = styled.ul`
   align-items: center;
   list-style: none;
   margin-top: 1rem;
+  @media (max-width: 1300px){
+    justify-content: center;    
+  }
 `;
 
 export const SocialMenuItem = styled.li`
@@ -64,5 +85,9 @@ export const SocialMenuLink = styled.a`
   img{
     width: 35px;
     height: 35px;
+    @media (max-width: 1300px){
+      width: 28px;
+      height: 28px;
+    }
   }
 `;
